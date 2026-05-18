@@ -4,6 +4,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import img2 from "../../assets/imagetwo.jpg";
+import ImageUi from "../Shared/Imageui";
+import { featuredDonors } from "../mockData";
 
 const DonationAndDonors = () => {
   const [amount, setAmount] = useState("50USD");
@@ -12,8 +14,10 @@ const DonationAndDonors = () => {
   const amounts = ["20USD", "50USD", "100USD"];
   const types = ["ONE TIME", "MONTHLY", "YEARLY"];
 
+  const data = [{}];
+
   return (
-    <div className="flex flex-col lg:flex-row w-full border px-[5%]">
+    <div className="flex flex-col lg:flex-row w-full border px-[5%] h-[600px]">
       {/* Donation Now Section */}
       <div className="lg:w-1/2 bg-[#4cdf68] p-12 lg:p-20 text-white flex flex-col justify-center">
         <h2 className="text-3xl font-bold mb-10 text-center lg:text-left">
@@ -99,33 +103,42 @@ const DonationAndDonors = () => {
       </div>
 
       {/* Featured Donors Section */}
-      <div className="lg:w-1/2 bg-gray-100 p-12 lg:p-20 flex flex-col justify-center border-orange-700">
-        <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">
+      <div className="lg:w-9/12 h-full bg-gray-100 p-12 lg:p-20 flex flex-col justify-center items-center border-orange-700">
+        <h2 className="text-3xl font-bold mb-5 mt-3 text-center text-gray-800">
           FEATURED DONORS
         </h2>
 
-        <div className="max-w-md mx-auto w-full text-center donors-slider">
+        <div className="max-w-md mx-auto w-full text-center donors-slider border donationAndDonor">
           <Swiper
             modules={[Pagination]}
             spaceBetween={30}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            className="pb-12"
+            className=" borderr relative"
           >
-            {[1, 2, 3].map((item) => (
-              <SwiperSlide key={item}>
-                <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <img
+            {featuredDonors.map((item) => (
+              <SwiperSlide key={item.id} className="pb-10">
+                <div className="bg-white rounded-lg shadow-sm borderr">
+                  {/* <img
                     src={img2}
                     alt="Kenneth J. Garnica"
                     className="w-full h-48 object-cover rounded mb-6"
+                  /> */}
+                  <ImageUi
+                    src={item.image}
+                    alt="Kenneth J. Garnica"
+                    className={"w-full h-[300px] object-cover rounded"}
                   />
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">
-                    Kenneth J. Garnica
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 mt-6">
+                    {item.name}
                   </h3>
                   <p className="text-sm text-gray-500">
-                    Donated Amount :{" "}
-                    <span className="text-[#4cdf68]">220 USD</span>
+                    Donated Amount :
+                    <span className="text-[#4cdf68]">
+                      `${item.amount} ${item.currency}`
+                    </span>
                   </p>
                 </div>
               </SwiperSlide>
@@ -133,17 +146,6 @@ const DonationAndDonors = () => {
           </Swiper>
         </div>
       </div>
-      <style>{`
-        .donors-slider .swiper-pagination-bullet {
-          width: 10px;
-          height: 10px;
-          background: #ccc;
-          opacity: 1;
-        }
-        .donors-slider .swiper-pagination-bullet-active {
-          background: #4cdf68;
-        }
-      `}</style>
     </div>
   );
 };

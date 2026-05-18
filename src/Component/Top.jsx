@@ -2,12 +2,12 @@ import React from "react";
 
 const Top = () => {
   return (
-    <div className="w-full flex justify-between gap-5 items-center bg-green-400 text-white px-3 sm:px-10">
-      <div className="h-full flex gap-x-5 items-center flex-col sm:flex-row">
+    <div className="w-full flex justify-between gap-5 items-center bg-green-400 text-white  sm:px-10 border">
+      <div className="h-full flex gap-x-5 items-center flex-col sm:flex-row border pl-10">
         <p>Phone:+10233456789</p>
         <p>Email:testdomain@gmail.com</p>
       </div>
-      <div className="h-full ">
+      <div className="h-full pr-8">
         <button className="text-xl bg-green-600 px-5 py-3">Join us now</button>
       </div>
     </div>

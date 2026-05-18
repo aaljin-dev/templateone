@@ -13,6 +13,7 @@ import Testimonial from "./Component/Testimonial/Testimonial";
 import LatestNews from "./Component/LatestNews/LatestNews";
 import Partners from "./Component/Partners/Partners";
 import Footer from "./Component/Footer/Footer";
+import "./App.css";
 
 const App = () => {
   const paragraph =
@@ -22,7 +23,6 @@ const App = () => {
   const headthree = [{ head: "OUR CAUSES", para: paragraph }];
   const headfour = [{ head: "OUR VOLUNTEER", para: paragraph }];
   const headfive = [{ head: "LATEST NEWS", para: paragraph }];
-
 
   return (
     <div className="overflow-x-hidden font-sans">

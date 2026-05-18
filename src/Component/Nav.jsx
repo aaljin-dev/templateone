@@ -3,12 +3,12 @@ import img from "../assets/image.png";
 
 const Nav = () => {
   return (
-    <div className=" flex justify-around items-center gap-30 w-full h-35 ">
+    <div className=" flex justify-around items-center gap-50 w-full h-30 ">
       <div>
         <img src={img} alt="" className="w-70" />
       </div>
       <div>
-        <ul className="flex gap-20">
+        <ul className="flex gap-10">
           <li>HOME</li>
           <li>ABOUT US</li>
           <li>CAUSES</li>

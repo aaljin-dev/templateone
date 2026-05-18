@@ -4,14 +4,17 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import img2 from "../../assets/imagetwo.jpg";
+import imgone from "../../assets/images/our_cuauses_three.jpg";
+import imgtwo from "../../assets/images/our_cuauses_one.jpg";
+import imgthree from "../../assets/images/our_cuauses_two.jpg";
 import Heading from "../Heading/Heading";
+import ImageUi from "../Shared/Imageui";
 
 const OurCauses = ({ headthree }) => {
   const causes = [
     {
       id: 1,
-      image: img2,
+      image: imgone,
       title: "FUTURES FOR CHILDREN",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minima",
       progress: 50,
@@ -20,7 +23,7 @@ const OurCauses = ({ headthree }) => {
     },
     {
       id: 2,
-      image: img2,
+      image: imgtwo,
       title: "FUTURES FOR CHILDREN",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minima",
       progress: 50,
@@ -29,30 +32,32 @@ const OurCauses = ({ headthree }) => {
     },
     {
       id: 3,
-      image: img2,
+      image: imgthree,
       title: "FUTURES FOR CHILDREN",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minima",
       progress: 50,
       raised: "$1200",
       goal: "$2400",
     },
-    {
-      id: 4,
-      image: img2,
-      title: "FUTURES FOR CHILDREN",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minima",
-      progress: 50,
-      raised: "$1200",
-      goal: "$2400",
-    },
+    // {
+    //   id: 4,
+    //   image: img2,
+    //   title: "FUTURES FOR CHILDREN",
+    //   desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minima",
+    //   progress: 50,
+    //   raised: "$1200",
+    //   goal: "$2400",
+    // },
   ];
 
   return (
     <div className="py-20 bg-white">
       <Heading headerone={headthree} />
 
-      <div className="max-w-6xl mx-auto px-4 relative causes-slider-container border-2 border-[#4cdf68]   
-      ">
+      <div
+        className="max-w-6xl mx-auto px-4 relative causes-slider-container border-2 border-[#4cdf68]   
+      "
+      >
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
@@ -63,15 +68,23 @@ const OurCauses = ({ headthree }) => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="pb-26 border-2 border-red-500 "
+          className="pb-26 border-2 border-red-500 h-[600px]"
         >
           {causes.map((cause) => (
             <SwiperSlide key={cause.id}>
-              <div className="bg-white border border-gray-100 rounded-lg shadow-sm overflow-hidden text-center hover:shadow-md transition-shadow mb-22">
-                <img
+              <div
+                className="bg-white border border-gray-100 rounded-lg shadow-sm
+               overflow-hidden text-center hover:shadow-md transition-shadow mb-22"
+              >
+                {/* <img
                   src={cause.image}
                   alt={cause.title}
                   className="w-full h-56 object-cover"
+                /> */}
+                <ImageUi
+                  src={cause.image}
+                  alt={cause.title}
+                  className={"w-full h-56 object-cover"}
                 />
                 <div className="p-8">
                   <h3 className="text-xl font-bold mb-4 text-gray-800">

@@ -1,12 +1,12 @@
 .topslideswiper {
-  width: 90%;
+  width: 85%;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   width: 30px;
   height: 30px;
-  background-color: #06df73;
+  background-color: #1db060;
   border-radius: 50%;
   color: white !important;
   display: flex;

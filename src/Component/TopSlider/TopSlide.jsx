@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/imagetwo.jpg";
+import img from "../../assets/carosal-bg.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./TopSlider.css";
 
@@ -24,11 +24,11 @@ function TopSlide() {
   return (
     <>
       <div
-        className="border h-[650px] w-full bg-cover bg-center bg-[#06df73]/100 bg-blend-overlay"
+        className="border h-[650px] w-full bg-cover bg-center "
         style={{ backgroundImage: `url(${img})` }}
       >
         <Swiper
-          className="topslideswiper h-full border"
+          className="topslideswiper h-full border border-amber-500"
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
@@ -38,8 +38,8 @@ function TopSlide() {
           // scrollbar={{ draggable: true }}
         >
           <SwiperSlide className="h-full slidearrow">
-            <div className="h-full flex justify-center items-center border">
-              <div className="h-full flex flex-col w-[50%] gap-[6%] justify-center items-center border text-center">
+            <div className="h-full flex justify-center items-center border ">
+              <div className="h-full flex flex-col w-[70%] gap-[6%] justify-center items-center border border-red-500 text-center">
                 <h1 className="text-white text-4xl font-bold">
                   CHILDREN NEED YOUR HELP
                 </h1>
@@ -62,7 +62,7 @@ function TopSlide() {
           </SwiperSlide>
           <SwiperSlide className="h-full">
             <div className="h-full flex justify-center items-center border">
-              <div className="h-full flex flex-col w-[50%] gap-[6%] justify-center items-center border text-center">
+              <div className="h-full flex flex-col w-[70%] gap-[6%] justify-center items-center border text-center">
                 <h1 className="text-white text-4xl font-bold">
                   CHILDREN NEED YOUR HELP
                 </h1>
@@ -85,7 +85,7 @@ function TopSlide() {
           </SwiperSlide>
           <SwiperSlide className="h-full">
             <div className="h-full flex justify-center items-center border">
-              <div className="h-full flex flex-col w-[50%] gap-[6%] justify-center items-center border text-center">
+              <div className="h-full flex flex-col w-[70%] gap-[6%] justify-center items-center border text-center">
                 <h1 className="text-white text-4xl font-bold">
                   CHILDREN NEED YOUR HELP
                 </h1>
@@ -108,7 +108,7 @@ function TopSlide() {
           </SwiperSlide>
           <SwiperSlide className="h-full">
             <div className="h-full flex justify-center items-center border">
-              <div className="h-full flex flex-col w-[50%] gap-[6%] justify-center items-center border text-center">
+              <div className="h-full flex flex-col w-[70%] gap-[6%] justify-center items-center border text-center">
                 <h1 className="text-white text-4xl font-bold">
                   CHILDREN NEED YOUR HELP
                 </h1>
