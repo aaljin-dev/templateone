@@ -32,7 +32,7 @@ const Activity = ({ headerone }) => {
     <div className="py-20 bg-gray-50 flex flex-col items-center">
       <Heading headerone={headerone} />
 
-      <div className="flex flex-col md:flex-row gap-8 px-4 max-w-6xl h-[350px] mx-auto borderr">
+      <div className="flex flex-col md:flex-row gap-8 px-4 max-w-6xl min-h-[350px] mx-auto borderr">
         {cardData.map((card) => (
           <div
             key={card.id}

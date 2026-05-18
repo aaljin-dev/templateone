@@ -27,7 +27,7 @@ const OurVolunteer = ({ headfour }) => {
         >
           {volunteers.map((vol) => (
             <SwiperSlide key={vol.id}>
-              <div className="bg-white borderr w-[60%] border-gray-100 rounded-lg shadow-sm flex overflow-hidden mb-[100px]">
+              <div className="bg-white borderr w-[60%] md:min-w-[60%] border-gray-100 rounded-lg shadow-sm flex overflow-hidden mb-[100px]">
                 {/* <img
                   src={vol.image}
                   alt={vol.name}
@@ -79,6 +79,16 @@ const OurVolunteer = ({ headfour }) => {
         .volunteer-slider .swiper-button-next:after,
         .volunteer-slider .swiper-button-prev:after {
           font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            .volunteer-slider .swiper-button-prev {
+          left: 40%;
+          transform: translateX(-50%);
+        }
+        .volunteer-slider .swiper-button-next {
+          right: 40%;
+          transform: translateX(50%);
+        }
         }
       `}</style>
     </div>

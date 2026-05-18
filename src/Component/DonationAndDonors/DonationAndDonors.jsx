@@ -17,7 +17,7 @@ const DonationAndDonors = () => {
   const data = [{}];
 
   return (
-    <div className="flex flex-col lg:flex-row w-full border px-[5%] h-[600px]">
+    <div className="flex flex-col lg:flex-row w-full border px-[5%] min-h-[600px]">
       {/* Donation Now Section */}
       <div className="lg:w-1/2 bg-[#4cdf68] p-12 lg:p-20 text-white flex flex-col justify-center">
         <h2 className="text-3xl font-bold mb-10 text-center lg:text-left">
@@ -103,12 +103,12 @@ const DonationAndDonors = () => {
       </div>
 
       {/* Featured Donors Section */}
-      <div className="lg:w-9/12 h-full bg-gray-100 p-12 lg:p-20 flex flex-col justify-center items-center border-orange-700">
+      <div className="lg:w-9/12 h-full bg-gray-100 p-12 lg:p-20 flex flex-col justify-center items-center borderr">
         <h2 className="text-3xl font-bold mb-5 mt-3 text-center text-gray-800">
           FEATURED DONORS
         </h2>
 
-        <div className="max-w-md mx-auto w-full text-center donors-slider border donationAndDonor">
+        <div className="max-w-md mx-auto w-full text-center donors-slider border donationAndDonor ">
           <Swiper
             modules={[Pagination]}
             spaceBetween={30}

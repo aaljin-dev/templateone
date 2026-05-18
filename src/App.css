@@ -19,3 +19,8 @@
 .donationAndDonor .swiper-pagination-bullet-active {
   background-color: rgb(72, 230, 72) !important;
 }
+@media (max-width: 768px) {
+  .donationAndDonor .swiper {
+    padding-bottom: 80px;
+  }
+}
