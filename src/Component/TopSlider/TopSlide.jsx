@@ -19,8 +19,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 function TopSlide() {
-  console.log("hao");
-
   return (
     <>
       <div
@@ -40,7 +38,7 @@ function TopSlide() {
           <SwiperSlide className="h-full slidearrow">
             <div className="h-full flex justify-center items-center border ">
               <div className="h-full flex flex-col w-[70%] gap-[6%] justify-center items-center border border-red-500 text-center">
-                <h1 className="text-white text-4xl font-bold">
+                <h1 className="text-white text-4xl font-bold font-hFont">
                   CHILDREN NEED YOUR HELP
                 </h1>
                 <p className="text-white text-1xl font-thin">
@@ -53,7 +51,7 @@ function TopSlide() {
                   <button className="bg-white text-green-400 px-7 py-3 rounded-4xl">
                     DONATE NOW
                   </button>
-                  <button className="bg-white text-green-400 px-7 py-3 rounded-4xl">
+                  <button className="bg-none border border-white text-white px-7 py-3 rounded-4xl">
                     CONTACT US
                   </button>
                 </div>

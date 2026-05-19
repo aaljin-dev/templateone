@@ -36,10 +36,16 @@ const UpcomingEvents = ({ headtwo }) => {
   ];
 
   return (
-    <div className="py-20 bg-white">
-      <Heading headerone={headtwo} />
+    <div className="py-10 bg-white">
+      <Heading
+        headerone={headtwo}
+        className={
+          "mb-7  md:mt-[95px] flex flex-col justify-center items-center  w-[50%] mx-auto border font-hFont "
+        }
+        classhead={"text-3xl font-bold text-gray-800 mb-6 md-mb-[62px]"}
+      />
 
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="md:max-w-[90%] md:mb-30  mx-auto grid grid-cols-1 md:grid-cols-3 gap-18 borderr">
         {events.map((event) => (
           <div
             key={event.id}
@@ -53,10 +59,10 @@ const UpcomingEvents = ({ headtwo }) => {
             <ImageUi
               src={event.image}
               alt={event.title}
-              className={"w-full h-48 object-cover"}
+              className={"w-full h-58 object-cover"}
             />
-            <div className="p-6">
-              <div className="flex justify-between items-center text-xs text-gray-500 mb-4">
+            <div className="pt-4">
+              <div className="flex justify-between items-center text-base text-gray-500 mb-4">
                 <div className="flex items-center gap-1">
                   <FaClock /> <span>{event.time}</span>
                 </div>
@@ -64,10 +70,12 @@ const UpcomingEvents = ({ headtwo }) => {
                   <FaMapMarkerAlt /> <span>{event.location}</span>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center text-gray-800">
+              <h3 className="text-xl font-bold mb-3 md:mt-9 text-center font-hFont text-gray-800">
                 {event.title}
               </h3>
-              <p className="text-sm text-gray-500 text-center">{event.desc}</p>
+              <p className="text-lg leading-loose font-hFont text-gray-500 text-center">
+                {event.desc}
+              </p>
             </div>
           </div>
         ))}

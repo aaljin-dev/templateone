@@ -39,23 +39,29 @@ const OurCauses = ({ headthree }) => {
       raised: "$1200",
       goal: "$2400",
     },
-    // {
-    //   id: 4,
-    //   image: img2,
-    //   title: "FUTURES FOR CHILDREN",
-    //   desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minima",
-    //   progress: 50,
-    //   raised: "$1200",
-    //   goal: "$2400",
-    // },
+    {
+      id: 4,
+      image: imgthree,
+      title: "FUTURES FOR CHILDREN",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minima",
+      progress: 50,
+      raised: "$1200",
+      goal: "$2400",
+    },
   ];
 
   return (
     <div className="py-20 bg-white">
-      <Heading headerone={headthree} />
+      <Heading
+        headerone={headthree}
+        className={
+          "mb-7  md:mt-[43px] flex flex-col justify-center items-center  w-[50%] mx-auto border font-hFont "
+        }
+        classhead={"text-3xl font-bold text-gray-800 mb-6"}
+      />
 
       <div
-        className="max-w-6xl mx-auto px-4 relative causes-slider-container border-2 border-[#4cdf68]   
+        className="max-w-[90%] mx-auto  causes-slider-container border-2 border-[#4cdf68]   
       "
       >
         <Swiper
@@ -68,13 +74,13 @@ const OurCauses = ({ headthree }) => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="pb-26 border-2 border-red-500 h-[600px]"
+          className="pb-26 borderr h-[900px]"
         >
           {causes.map((cause) => (
             <SwiperSlide key={cause.id}>
               <div
-                className="bg-white border border-gray-100 rounded-lg shadow-sm
-               overflow-hidden text-center hover:shadow-md transition-shadow mb-22"
+                className=" rounded-lg shadow-sm
+               overflow-hidden text-center hover:shadow-md transition-shadow border w-[375px]"
               >
                 {/* <img
                   src={cause.image}
@@ -86,39 +92,39 @@ const OurCauses = ({ headthree }) => {
                   alt={cause.title}
                   className={"w-full h-56 object-cover"}
                 />
-                <div className="p-8">
-                  <h3 className="text-xl font-bold mb-4 text-gray-800">
+                <div className="pt-25 ">
+                  <h3 className="text-xl font-bold  text-gray-800 pb-10 font-hFont">
                     {cause.title}
                   </h3>
-                  <p className="text-sm text-gray-500 mb-6 leading-relaxed">
+                  <p className="text-base text-gray-500 mb-6 font-[30px]">
                     {cause.desc}
                   </p>
 
-                  <div className="relative pt-1 mt-6 mb-6">
-                    <span className="absolute left-[50%] -top-5 -translate-x-1/2 text-xs font-bold text-gray-700">
-                      {cause.progress}%
-                    </span>
-                    <div className="overflow-hidden h-1.5 mb-4 text-xs flex rounded bg-gray-200">
-                      <div
-                        style={{ width: `${cause.progress}%` }}
-                        className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#4cdf68]"
-                      ></div>
+                  <div className=" pt-1 mt-6 mb-6">
+                    <p className=" borderr mb-5">{cause.progress}%</p>
+                    <div className="">
+                      <div className="w-[90%] mx-5 h-3 rounded-md bg-[linear-gradient(to_right,#02ce67_50%,#e5e5e5_50%)]"></div>
                     </div>
-                    <div className="flex justify-between items-center text-xs font-semibold text-gray-700">
+                    <div className="flex justify-between pt-4 mx-5">
                       <span>
-                        Raised:{" "}
-                        <span className="text-[#4cdf68]">{cause.raised}</span>
+                        Raised :
+                        <span className="text-green-400">{cause.raised}</span>
                       </span>
                       <span>
-                        Goal:{" "}
-                        <span className="text-[#4cdf68]">{cause.goal}</span>
+                        Goal :
+                        <span className="text-green-400">{cause.goal}</span>
                       </span>
                     </div>
                   </div>
 
-                  <button className="border-2 border-[#4cdf68] text-[#4cdf68] font-bold py-2 px-6 rounded-full hover:bg-[#4cdf68] hover:text-white transition duration-300">
-                    DONATE NOW
-                  </button>
+                  <div className="mb-11 mt-15">
+                    <button
+                      className="border-2 border-[#9fe9ad] text-[#4cdf68] font-bold py-2 px-6 rounded-full hover:bg-[#4cdf68]
+                     hover:text-white transition duration-300"
+                    >
+                      DONATE NOW
+                    </button>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -126,36 +132,41 @@ const OurCauses = ({ headthree }) => {
         </Swiper>
       </div>
       <style>{`
-        .causes-slider-container .swiper-button-next,
-        .causes-slider-container .swiper-button-prev {
-          top: auto;
-          bottom: 0;
-          width: 40px;
-          height: 40px;
-          border: 1px solid #4cdf68;
-          border-radius: 4px;
-          color: #4cdf68;
-          transition: all 0.3s ease;
-        }
-        .causes-slider-container .swiper-button-next:hover,
-        .causes-slider-container .swiper-button-prev:hover {
-          background-color: #4cdf68;
-          color: white;
-        }
-        .causes-slider-container .swiper-button-prev {
-          left: calc(50% - 45px);
-          transform: none;
-        }
-        .causes-slider-container .swiper-button-next {
-          right: calc(50% - 45px);
-          transform: none;
-        }
-        .causes-slider-container .swiper-button-next:after,
-        .causes-slider-container .swiper-button-prev:after {
-          font-size: 14px;
-          font-weight: bold;
-        }
-      `}</style>
+  .causes-slider-container .swiper-button-next,
+  .causes-slider-container .swiper-button-prev {
+    top: auto;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid #4cdf68;
+    border-radius: 4px;
+    color: black;  
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+
+  .causes-slider-container .swiper-button-next:hover,
+  .causes-slider-container .swiper-button-prev:hover {
+    background-color: #4cdf68;
+    
+  }
+
+  .causes-slider-container .swiper-button-prev {
+    left: calc(45% - 50px);
+  }
+
+  .causes-slider-container .swiper-button-next {
+    right: calc(45% - 50px);
+  }
+
+  .causes-slider-container .swiper-button-next:after,
+  .causes-slider-container .swiper-button-prev:after {
+   color: black;
+    font-size: 10px;
+    font-weight: bold;
+  }
+`}</style>
     </div>
   );
 };

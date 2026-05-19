@@ -6,12 +6,12 @@ const Nav = () => {
   const [Open, setOpen] = useState(false);
   return (
     <nav className="relative">
-      <div className=" flex justify-around items-center gap-[5%] w-full h-30 borderr px-[2%] md:pl-[5%] md:pr-[1px]">
+      <div className=" flex justify-around items-center gap-[5%] w-full md:h-30 borderr md:px-[2%] md:pl-[5%] md:pr-[1px]">
         <div>
           <img
             src={img}
             alt=""
-            className="w-60 h-20 object-contain borderr md:w-70 md:h-30 "
+            className="w-50 h-20 object-contain borderr md:w-70 md:h-30 "
           />
         </div>
         <div className="hidden md:block borderr w-full">
@@ -32,7 +32,7 @@ const Nav = () => {
               setOpen(!Open);
             }}
           >
-            <CiMenuBurger className="text-3xl" />
+            <CiMenuBurger className="text-2xl" />
           </button>
         </div>
       </div>
