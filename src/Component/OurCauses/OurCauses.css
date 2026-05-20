@@ -1,0 +1,43 @@
+.causes-slider-container .swiper-button-next,
+.causes-slider-container .swiper-button-prev {
+  top: auto;
+  bottom: 40px;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid #4cdf68;
+  border-radius: 4px;
+  background-color: white;
+  color: #4cdf68 !important;
+  transition: all 0.3s ease;
+}
+
+/* hover background */
+.causes-slider-container .swiper-button-next:hover,
+.causes-slider-container .swiper-button-prev:hover {
+  background-color: #4cdf68;
+  color: white !important;
+}
+
+/* arrow positions */
+.causes-slider-container .swiper-button-prev {
+  left: calc(45% - 50px);
+}
+
+.causes-slider-container .swiper-button-next {
+  right: calc(45% - 50px);
+}
+
+/* normal arrow color */
+.causes-slider-container .swiper-button-next::after,
+.causes-slider-container .swiper-button-prev::after {
+  color: white !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* hover arrow color */
+.causes-slider-container .swiper-button-next:hover::after,
+.causes-slider-container .swiper-button-prev:hover::after {
+  color: white !important;
+}

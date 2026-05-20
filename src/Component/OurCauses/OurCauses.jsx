@@ -10,6 +10,13 @@ import imgthree from "../../assets/images/our_cuauses_two.jpg";
 import Heading from "../Heading/Heading";
 import ImageUi from "../Shared/Imageui";
 
+import "./OurCauses";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./OurCauses.css";
+
 const OurCauses = ({ headthree }) => {
   const causes = [
     {
@@ -118,10 +125,7 @@ const OurCauses = ({ headthree }) => {
                   </div>
 
                   <div className="mb-11 mt-15">
-                    <button
-                      className="border-2 border-[#9fe9ad] text-[#4cdf68] font-bold py-2 px-6 rounded-full hover:bg-[#4cdf68]
-                     hover:text-white transition duration-300"
-                    >
+                    <button className="border-2 border-[#4cdf68] text-[#4cdf68] font-bold py-2 px-6 rounded-full bg-white hover:bg-[#4cdf68] hover:text-white transition duration-300">
                       DONATE NOW
                     </button>
                   </div>
@@ -131,42 +135,6 @@ const OurCauses = ({ headthree }) => {
           ))}
         </Swiper>
       </div>
-      <style>{`
-  .causes-slider-container .swiper-button-next,
-  .causes-slider-container .swiper-button-prev {
-    top: auto;
-    bottom: 40px;
-    width: 50px;
-    height: 50px;
-    padding: 15px;
-    border: 1px solid #4cdf68;
-    border-radius: 4px;
-    color: black;  
-    background-color: white;
-    transition: all 0.3s ease;
-  }
-
-  .causes-slider-container .swiper-button-next:hover,
-  .causes-slider-container .swiper-button-prev:hover {
-    background-color: #4cdf68;
-    
-  }
-
-  .causes-slider-container .swiper-button-prev {
-    left: calc(45% - 50px);
-  }
-
-  .causes-slider-container .swiper-button-next {
-    right: calc(45% - 50px);
-  }
-
-  .causes-slider-container .swiper-button-next:after,
-  .causes-slider-container .swiper-button-prev:after {
-   color: black;
-    font-size: 10px;
-    font-weight: bold;
-  }
-`}</style>
     </div>
   );
 };

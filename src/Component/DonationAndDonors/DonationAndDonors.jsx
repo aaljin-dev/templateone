@@ -17,9 +17,9 @@ const DonationAndDonors = () => {
   const data = [{}];
 
   return (
-    <div className="flex flex-col lg:flex-row w-full border px-[5%] min-h-[600px]">
+    <div className="flex flex-col lg:flex-row w-full border mt-4 px-[5%] min-h-[600px] ">
       {/* Donation Now Section */}
-      <div className="lg:w-1/2 bg-[#4cdf68] p-12 lg:p-20 text-white flex flex-col justify-center">
+      <div className="lg:w-1/2 bg-[#4cdf68] p-12 lg:p-20 text-white flex flex-col justify-center borderr">
         <h2 className="text-3xl font-bold mb-10 text-center lg:text-left">
           DONATION NOW
         </h2>
