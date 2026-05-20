@@ -13,11 +13,7 @@
   .borderr {
     @apply border-2 border-red-500;
   }
-}
-@layer {
-  .borderrr {
-    @apply border-2 border-red-500;
-  }
-  body {
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
   }
 }

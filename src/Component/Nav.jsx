@@ -6,16 +6,16 @@ const Nav = () => {
   const [Open, setOpen] = useState(false);
   return (
     <nav className="relative">
-      <div className=" flex justify-around items-center gap-[5%] w-full md:h-30 borderr md:px-[2%] md:pl-[5%] md:pr-[1px]">
+      <div className=" flex justify-around items-center gap-[5%] w-full md:h-30 md:px-[2%] md:pl-[5%] md:pr-[1px]">
         <div>
           <img
             src={img}
             alt=""
-            className="w-50 h-20 object-contain borderr md:w-70 md:h-30 "
+            className="w-50 h-20 object-contain md:w-70 md:h-30 "
           />
         </div>
-        <div className="hidden md:block borderr w-full">
-          <div className="flex gap-[4%] justify-end">
+        <div className="hidden md:block w-full">
+          <div className="flex gap-[4%] justify-end uppercase">
             <a href="">Home</a>
             <a href="">Aboutus</a>
             <a href="">causes</a>

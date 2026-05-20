@@ -12,7 +12,7 @@ const Heading = ({
           <div key={index} className="text-center mb-16 px-4">
             <h2 className={classhead}>
               {head.head}
-              <div className="w-16 h-0.5 bg-[#4cdf68] mt-4 mx-auto mb-10"></div>
+              <div className="w-16 h-0.5 bg-[#44ac77] mt-4 mx-auto mb-10"></div>
             </h2>
 
             <p className="text-gray-700 leading-[35px] max-w-2xl mx-auto">

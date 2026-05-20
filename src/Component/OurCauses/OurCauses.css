@@ -21,11 +21,11 @@
 
 /* arrow positions */
 .causes-slider-container .swiper-button-prev {
-  left: calc(45% - 50px);
+  left: calc(49% - 50px);
 }
 
 .causes-slider-container .swiper-button-next {
-  right: calc(45% - 50px);
+  right: calc(49% - 50px);
 }
 
 /* normal arrow color */

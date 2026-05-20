@@ -1,0 +1,28 @@
+.donationAndDonor .swiper {
+  padding-bottom: 55px; /* space for bullets */
+  position: relative;
+}
+
+.donationAndDonor .swiper-pagination {
+  position: absolute;
+  bottom: 0 !important; /* move to bottom */
+  left: 0;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.donationAndDonor .swiper-pagination-bullet {
+  /* background-color: black !important; */
+  border: 1px solid gray !important;
+  width: 13px;
+  height: 13px;
+}
+
+.donationAndDonor .swiper-pagination-bullet-active {
+  background-color: rgb(72, 230, 72) !important;
+}
+@media (max-width: 768px) {
+  .donationAndDonor .swiper {
+    padding-bottom: 10px;
+  }
+}

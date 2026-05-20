@@ -22,22 +22,23 @@ function TopSlide() {
   return (
     <>
       <div
-        className="border h-[650px] w-full bg-cover bg-center "
+        className=" h-[650px] w-full bg-cover bg-center "
         style={{ backgroundImage: `url(${img})` }}
       >
         <Swiper
-          className="topslideswiper h-full border border-amber-500"
+          className="topslideswiper h-full "
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
           slidesPerView={1}
+          loop={true}
           navigation
           pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
         >
           <SwiperSlide className="h-full slidearrow">
-            <div className="h-full flex justify-center items-center border ">
-              <div className="h-full flex flex-col w-[70%] gap-[6%] justify-center items-center border border-red-500 text-center">
+            <div className="h-full flex justify-center items-center ">
+              <div className="h-full flex flex-col w-[70%] gap-[6%] justify-center items-center text-center">
                 <h1 className="text-white text-4xl font-bold font-hFont">
                   CHILDREN NEED YOUR HELP
                 </h1>

@@ -11,10 +11,13 @@ import ImageUi from "../Shared/Imageui";
 
 const OurVolunteer = ({ headfour }) => {
   return (
-    <div className="py-20 bg-white border-2 border-red-500">
-      <Heading headerone={headfour} />
+    <div className="py-20 bg-white ">
+      <Heading
+        headerone={headfour}
+        classhead={"md:text-[35px] font-bold text-gray-800 mb-6"}
+      />
 
-      <div className="max-w-[1500px] mx-auto px-9 relative volunteer-slider border-2 border-green-500 h-[300px] ">
+      <div className="max-w-[1200px] ml-10  px-9 relative volunteer-slider  h-[350px] ">
         <Swiper
           modules={[Navigation]}
           spaceBetween={40}
@@ -23,33 +26,30 @@ const OurVolunteer = ({ headfour }) => {
           breakpoints={{
             768: { slidesPerView: 2 },
           }}
-          className="pb-16"
         >
           {volunteers.map((vol) => (
             <SwiperSlide key={vol.id}>
-              <div className="bg-white borderr w-[60%] md:min-w-[60%] border-gray-100 rounded-lg shadow-sm flex overflow-hidden mb-[100px]">
+              <div className="bg-white w-[50%] h-[185px] md:min-w-[75%]  rounded-lg  flex  mb-[100px] ">
                 {/* <img
                   src={vol.image}
                   alt={vol.name}
                   className="w-1/3 object-cover"
                 /> */}
-                <ImageUi
-                  src={vol.image}
-                  alt={vol.name}
-                  className={"w-1/3 object-cover"}
-                />
-                <div className="p-6 flex-1 flex flex-col justify-center">
-                  <h3 className="text-lg font-bold text-gray-800">
-                    {vol.name}
-                  </h3>
-                  <p className="text-xs text-[#4cdf68] font-bold mb-3">
-                    {vol.role}
-                  </p>
-                  <p className="text-sm text-gray-500 mb-4">{vol.desc}</p>
-                  <div className="flex gap-0 text-gray-400">
-                    <FaFacebookF className="cursor-pointer hover:text-[#4cdf68]" />
-                    <FaTwitter className="cursor-pointer hover:text-[#4cdf68]" />
-                    <FaBehance className="cursor-pointer hover:text-[#4cdf68]" />
+                <ImageUi src={vol.image} alt={vol.name} className={""} />
+                <div className=" mb-1 rounded-xl shadow-[15px_15px_20px_rgba(0,0,0,0.08)]">
+                  <div className="md:pl-9 md:py-5 flex-1 flex flex-col h-20">
+                    <h3 className="text-lg font-bold text-gray-800 font-hFont">
+                      {vol.name}
+                    </h3>
+                    <p className="text-base font-light mb-3">{vol.role}</p>
+                    <p className="text-balance text-gray-500 mb-4 w-[100%]">
+                      {vol.desc}
+                    </p>
+                    <div className="flex gap-0 text-gray-700">
+                      <FaFacebookF className="cursor-pointer hover:text-[#4cdf68] mr-4 " />
+                      <FaTwitter className="cursor-pointer hover:text-[#4cdf68] mr-4" />
+                      <FaBehance className="cursor-pointer hover:text-[#4cdf68] mr-4 text-xl" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -62,18 +62,20 @@ const OurVolunteer = ({ headfour }) => {
         .volunteer-slider .swiper-button-prev {
           top: auto;
           bottom: 0;
-          width: 40px;
-          height: 40px;
-          border: 1px solid #ccc;
+          width: 45px;
+          height: 45px;
+          border: 2px solid #55a379;
           border-radius: 4px;
-          color: #888;
+           background-color: white;
+          color: #55a379 !important;
+          padding: 15px;
         }
         .volunteer-slider .swiper-button-prev {
-          left: 48%;
+          left: 61%;
           transform: translateX(-50%);
         }
         .volunteer-slider .swiper-button-next {
-          right: 48%;
+          right: 33%;
           transform: translateX(50%);
         }
         .volunteer-slider .swiper-button-next:after,

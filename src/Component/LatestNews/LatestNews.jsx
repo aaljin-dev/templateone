@@ -5,10 +5,13 @@ import Heading from "../Heading/Heading";
 
 const LatestNews = ({ headfive }) => {
   return (
-    <div className="py-20 bg-white borderr">
-      <Heading headerone={headfive} />
+    <div className="pt-25 w-full pb-30 bg-white">
+      <Heading
+        headerone={headfive}
+        classhead={"text-4xl font-bold text-gray-800 mb-6"}
+      />
 
-      <div className="max-w-7xl mx-auto px-15 grid grid-cols-1 md:grid-cols-3 gap-[4%] borderr">
+      <div className="max-w-[90%] mx-auto  grid grid-cols-1 md:grid-cols-3 gap-[4%] ">
         {news.map((item) => (
           <div
             key={item.id}
@@ -19,18 +22,15 @@ const LatestNews = ({ headfive }) => {
               alt={item.title}
               className="w-full h-55 object-cover"
             />
-            <div className="p-6 border-t-2 border-[#4cdf68] relative">
-              <p className="text-xs text-gray-400 mb-3">{item.date}</p>
-              <h3 className="text-lg font-bold text-gray-800 mb-3 leading-tight hover:text-[#4cdf68] cursor-pointer transition-colors">
+            <div className="p-6  ">
+              <p className="text-base text-black mb-3">{item.date}</p>
+              <h3 className=" font-medium pr-20 leading-loose text-gray-800  ">
                 {item.title}
               </h3>
-              <p className="text-sm text-gray-500 mb-4 leading-relaxed">
+              <p className="text-sm  mb-4 leading-relaxed text-gray-400">
                 {item.desc}
               </p>
-              <a
-                href="#"
-                className="text-sm font-bold text-gray-800 hover:text-[#4cdf68] transition-colors"
-              >
+              <a href="#" className="text-[16px] font-medium">
                 READ MORE
               </a>
             </div>

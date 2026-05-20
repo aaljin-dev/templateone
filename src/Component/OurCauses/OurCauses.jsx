@@ -62,15 +62,12 @@ const OurCauses = ({ headthree }) => {
       <Heading
         headerone={headthree}
         className={
-          "mb-7  md:mt-[43px] flex flex-col justify-center items-center  w-[50%] mx-auto border font-hFont "
+          "  md:mt-[43px] flex flex-col justify-center items-center  w-[50%] mx-auto font-hFont "
         }
         classhead={"text-3xl font-bold text-gray-800 mb-6"}
       />
 
-      <div
-        className="max-w-[90%] mx-auto  causes-slider-container border-2 border-[#4cdf68]   
-      "
-      >
+      <div className="max-w-[90%] mx-auto  causes-slider-container">
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
@@ -81,13 +78,13 @@ const OurCauses = ({ headthree }) => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="pb-26 borderr h-[900px]"
+          className="pb-26 h-[900px]"
         >
           {causes.map((cause) => (
             <SwiperSlide key={cause.id}>
               <div
-                className=" rounded-lg shadow-sm
-               overflow-hidden text-center hover:shadow-md transition-shadow border w-[375px]"
+                className=" rounded-lg shadow-lg
+               overflow-hidden text-center   w-[375px]"
               >
                 {/* <img
                   src={cause.image}
@@ -97,7 +94,7 @@ const OurCauses = ({ headthree }) => {
                 <ImageUi
                   src={cause.image}
                   alt={cause.title}
-                  className={"w-full h-56 object-cover"}
+                  className={"w-full h-full object-contain"}
                 />
                 <div className="pt-25 ">
                   <h3 className="text-xl font-bold  text-gray-800 pb-10 font-hFont">
@@ -108,24 +105,24 @@ const OurCauses = ({ headthree }) => {
                   </p>
 
                   <div className=" pt-1 mt-6 mb-6">
-                    <p className=" borderr mb-5">{cause.progress}%</p>
+                    <p className="  mb-5">{cause.progress}%</p>
                     <div className="">
                       <div className="w-[90%] mx-5 h-3 rounded-md bg-[linear-gradient(to_right,#02ce67_50%,#e5e5e5_50%)]"></div>
                     </div>
                     <div className="flex justify-between pt-4 mx-5">
                       <span>
                         Raised :
-                        <span className="text-green-400">{cause.raised}</span>
+                        <span className="text-[#41bc7d]">{cause.raised}</span>
                       </span>
                       <span>
                         Goal :
-                        <span className="text-green-400">{cause.goal}</span>
+                        <span className="text-[#41bc7d]">{cause.goal}</span>
                       </span>
                     </div>
                   </div>
 
                   <div className="mb-11 mt-15">
-                    <button className="border-2 border-[#4cdf68] text-[#4cdf68] font-bold py-2 px-6 rounded-full bg-white hover:bg-[#4cdf68] hover:text-white transition duration-300">
+                    <button className="border-2 border-[#54a079] text-[#3abd77] font-bold py-2 px-6 rounded-full bg-white ">
                       DONATE NOW
                     </button>
                   </div>

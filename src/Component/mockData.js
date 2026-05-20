@@ -94,4 +94,8 @@ export const DataImage = [
   { id: 2, image: microsoft },
   { id: 3, image: envato },
   { id: 4, image: yahoo },
+  { id: 5, image: amazon },
+  { id: 6, image: microsoft },
+  { id: 7, image: envato },
+  { id: 8, image: yahoo },
 ];

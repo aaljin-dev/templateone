@@ -4,21 +4,23 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  width: 30px;
-  height: 30px;
   background-color: #1db060;
+  padding: 15px;
   border-radius: 50%;
   color: white !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+}
+
+.swiper-button-next .swiper-navigation-icon,
+.swiper-button-prev .swiper-navigation-icon {
+  font-weight: 700;
+  /* scale: calc(1.5); */
+  font-size: 18px;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 14px !important;
-  font-weight: bold;
+  font-size: 10px !important;
+  font-weight: bold !important;
 }
 
 .swiper-pagination-bullet {
