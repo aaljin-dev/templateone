@@ -4,13 +4,13 @@ import img from "../../assets/images/donate-bg.jpg";
 const UrgentCause = () => {
   return (
     <div
-      className="bg-[#4cdf68] pb-20 pt-20  px-4 text-center text-white w-full h-[580px] mx-auto "
+      className="bg-[#4cdf68] sm:pb-20 py-5 sm:pt-20  px-4 text-center text-white w-full  sm:h-[580px] mx-auto "
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="">
         <div className=" font-hFont">
           <p className="text-xl font-medium  mb-2 md:mb-6">URGENT CAUSE</p>
-          <h2 className="text-3xl font-bold mb-6 md:mb-8">
+          <h2 className="md:text-3xl text-2xl font-bold mb-6 md:mb-8">
             Recent Environmental Disasters
           </h2>
           <p className="max-w-4xl mx-auto  md:text-[16px] leading-[30px] opacity-90  md:w-3xl  ">

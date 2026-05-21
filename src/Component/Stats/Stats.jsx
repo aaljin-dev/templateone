@@ -15,7 +15,7 @@ const Stats = () => {
       className=" md:h-[364px] w-full"
       style={{ backgroundImage: `url(${img})` }}
     >
-      <div className="max-w-full mx-auto px-4  flex flex-wrap justify-around items-center h-full text-white">
+      <div className="max-w-full mx-auto px-4 py-3 flex flex-wrap justify-around items-center h-full text-white">
         {statsData.map((stat) => (
           <div
             key={stat.id}

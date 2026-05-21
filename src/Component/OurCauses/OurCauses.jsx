@@ -58,13 +58,13 @@ const OurCauses = ({ headthree }) => {
   ];
 
   return (
-    <div className="py-20 bg-white">
+    <div className="sm:py-20 pt-10 bg-white">
       <Heading
         headerone={headthree}
         className={
-          "  md:mt-[43px] flex flex-col justify-center items-center  w-[50%] mx-auto font-hFont "
+          "  md:mt-[43px] flex flex-col justify-center items-center w-full px-3 sm:w-[50%] mx-auto font-hFont "
         }
-        classhead={"text-3xl font-bold text-gray-800 mb-6"}
+        classhead={"md:text-3xl text-2xl font-bold text-gray-800 mb-6"}
       />
 
       <div className="max-w-[90%] mx-auto  causes-slider-container">
@@ -78,7 +78,7 @@ const OurCauses = ({ headthree }) => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="pb-26 h-[900px]"
+          className="md:pb-26  h-[770px] sm:h-[900px]"
         >
           {causes.map((cause) => (
             <SwiperSlide key={cause.id}>
@@ -104,12 +104,12 @@ const OurCauses = ({ headthree }) => {
                     {cause.desc}
                   </p>
 
-                  <div className=" pt-1 mt-6 mb-6">
-                    <p className="  mb-5">{cause.progress}%</p>
+                  <div className=" pt-1 mt-6 sm:mb-6">
+                    <p className="  sm:mb-5">{cause.progress}%</p>
                     <div className="">
                       <div className="w-[90%] mx-5 h-3 rounded-md bg-[linear-gradient(to_right,#02ce67_50%,#e5e5e5_50%)]"></div>
                     </div>
-                    <div className="flex justify-between pt-4 mx-5">
+                    <div className="flex justify-between sm:pt-4 mx-5">
                       <span>
                         Raised :
                         <span className="text-[#41bc7d]">{cause.raised}</span>

@@ -5,17 +5,22 @@ import Heading from "../Heading/Heading";
 
 const LatestNews = ({ headfive }) => {
   return (
-    <div className="pt-25 w-full pb-30 bg-white">
+    <div className="md:pt-25 pt-5 w-full md:pb-30 pb-5 bg-white">
       <Heading
         headerone={headfive}
-        classhead={"text-4xl font-bold text-gray-800 mb-6"}
+        classhead={
+          "md:text-4xl text-2xl font-bold text-gray-800 mb-1 md:mb-6 borderr"
+        }
+        className={
+          "mb-7 sm:mt-10 flex flex-col justify-center items-center w-full px-3  sm:w-[50%] mx-auto font-hFont borderr"
+        }
       />
 
-      <div className="max-w-[90%] mx-auto  grid grid-cols-1 md:grid-cols-3 gap-[4%] ">
+      <div className="max-w-[90%] mx-auto  grid grid-cols-1 md:grid-cols-3 gap-[4%] borderr sm:h-[470px] h-[1500px]">
         {news.map((item) => (
           <div
             key={item.id}
-            className="bg-white border border-gray-100 rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow"
+            className="bg-white border border-gray-100 rounded-lg shadow-sm overflow-hidden  transition-shadow  borderr"
           >
             <img
               src={item.image}

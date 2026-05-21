@@ -7,7 +7,7 @@ import { FaQuoteRight } from "react-icons/fa";
 const Testimonial = () => {
   return (
     <div
-      className=" py-18 px-4 text-center text-white relative "
+      className=" md:py-18 py-5 px-4 text-center text-white relative "
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="max-w-4xl mx-auto">
@@ -21,7 +21,7 @@ const Testimonial = () => {
             src={img2}
             alt="Florence M. Cofer"
             className={
-              "w-35 h-35 rounded-full border-4 border-white/20 object-cover mb-8"
+              "md:w-35 md:h-35 w-30 h-30 rounded-full border-4 border-white/20 object-cover mb-4 md:mb-8"
             }
           />
           <p className="text-sm md:text-lg font-base mb-8 max-w-3xl leading-relaxed">
@@ -31,8 +31,8 @@ const Testimonial = () => {
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit."
           </p>
-          <div className=" *: w-[80px] h-[70px]">
-            <span className="text-4xl font-serif  text-[#1fbb6a] font-bold leading-none">
+          <div className=" w-[45px] h-[50px] text-center">
+            <span className="text-4xl font-serif text-center  text-[#1fbb6a] font-bold leading-none">
               <FaQuoteRight />
             </span>
           </div>

@@ -22,7 +22,7 @@ function TopSlide() {
   return (
     <>
       <div
-        className=" h-[650px] w-full bg-cover bg-center "
+        className=" sm:h-[650px] h-[500px] w-full bg-cover bg-center "
         style={{ backgroundImage: `url(${img})` }}
       >
         <Swiper
@@ -39,7 +39,7 @@ function TopSlide() {
           <SwiperSlide className="h-full slidearrow">
             <div className="h-full flex justify-center items-center ">
               <div className="h-full flex flex-col w-[70%] gap-[6%] justify-center items-center text-center">
-                <h1 className="text-white text-4xl font-bold font-hFont">
+                <h1 className="text-white sm:text-4xl text-xl font-bold font-hFont">
                   CHILDREN NEED YOUR HELP
                 </h1>
                 <p className="text-white text-1xl font-thin">
@@ -49,10 +49,10 @@ function TopSlide() {
                   rerum temporibus nobis ipsam ex?
                 </p>
                 <div className="flex gap-10">
-                  <button className="bg-white text-green-400 px-7 py-3 rounded-4xl">
+                  <button className="bg-white text-sm sm:text-xl w-30 h-10 sm:w-50 sm:h-15 text-green-400 sm:px-7 sm:py-3 sm:rounded-4xl rounded-xl">
                     DONATE NOW
                   </button>
-                  <button className="bg-none border border-white text-white px-7 py-3 rounded-4xl">
+                  <button className="bg-none border text-sm sm:text-xl w-30 h-10 sm:w-50 sm:h-15 border-white text-white sm:px-7 sm:py-3 rounded-xl sm:rounded-4xl">
                     CONTACT US
                   </button>
                 </div>

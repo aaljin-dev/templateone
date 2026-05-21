@@ -33,16 +33,16 @@ const Activity = ({ headerone }) => {
       <Heading
         headerone={headerone}
         className={
-          "mb-7 sm:mt-10 flex flex-col justify-center items-center  w-[50%] mx-auto font-hFont"
+          "mb-7 sm:mt-10 flex flex-col justify-center items-center w-full px-3  sm:w-[50%] mx-auto font-hFont "
         }
-        classhead={"text-3xl font-bold text-gray-800 mb-6"}
+        classhead={"md:text-3xl text-2xl font-bold text-gray-800 mb-6"}
       />
 
-      <div className="flex flex-col md:flex-row gap-[10%] px-4 max-w-8xl min-h-[350px] mx-auto">
+      <div className="flex flex-col md:flex-row gap-[10%] px-4 max-w-8xl min-h-[350px] mx-auto border">
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="bg-white w-[400px] p-10 rounded-lg shadow-[0_1px_5px_rgba(0,0,0,0.3)]  flex-1 relative mt-10 "
+            className="bg-white sm:w-[400px] p-10 rounded-lg shadow-[0_1px_5px_rgba(0,0,0,0.3)]  flex-1 relative mt-10 "
           >
             <div
               className="w-20 h-20 bg-white   shadow-[0_2px_10px_rgba(0,0,0,0.3),0_0px_3px_rgba(0,0,0,0.3)]  rounded-full flex justify-center items-center

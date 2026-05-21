@@ -19,13 +19,15 @@ const DonationAndDonors = () => {
   const data = [{}];
 
   return (
-    <div className="flex flex-col lg:flex-row w-full mt-4 px-[5%] h-[600px]">
+    <div className="flex flex-col lg:flex-row w-full md:h-[600px] sm:mt-4 sm:px-[5%] borderr">
       {/* Donation Now Section */}
-      <div className="lg:w-1/2 bg-[#02d262] p-12 lg:px-15 text-white flex flex-col justify-around items-center">
-        <h2 className="text-2xl font-base mb-4  lg:text-left">DONATION NOW</h2>
+      <div className="lg:w-1/2 bg-[#02d262] md:py-10 py-6 px-3 lg:px-15 text-white flex flex-col justify-around gap-1 items-center borderr">
+        <h2 className="text-2xl font-base   lg:text-left borderr">
+          DONATION NOW
+        </h2>
 
-        <div className="mb-6">
-          <div className="flex items-center gap-4 mb-12 text-sm font-bold tracking-wide">
+        <div className=" border">
+          <div className="flex items-center sm:gap-5 md:mb-12 mb-6 text-sm font-bold tracking-wide border">
             <span>AMOUNT :</span>
             <div className="flex gap-6">
               {amounts.map((amt) => (
@@ -47,7 +49,7 @@ const DonationAndDonors = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4  text-sm font-bold tracking-wide">
+          <div className="flex items-center gap-3 md:mb-3  text-sm font-bold tracking-wide">
             <span>TYPE :</span>
             <div className="flex gap-4">
               {types.map((t) => (
@@ -70,8 +72,8 @@ const DonationAndDonors = () => {
           </div>
         </div>
 
-        <form className="flex flex-col gap-4">
-          <div className="flex gap-4">
+        <form className="flex flex-col gap-4 mt-8 md:mt-0 ">
+          <div className="flex gap-4 ">
             <input
               type="text"
               placeholder="Name"
@@ -104,11 +106,11 @@ const DonationAndDonors = () => {
 
       {/* Featured Donors Section */}
       <div className="lg:w-9/12 h-full bg-gray-100  lg:p-20 flex flex-col justify-center items-center">
-        <h2 className="text-3xl font-medium mb-5 mt-3 text-center text-gray-800">
+        <h2 className="text-3xl font-medium mb-5 mt-9 sm:mt-3 text-center text-gray-800">
           FEATURED DONORS
         </h2>
 
-        <div className="max-w-md mx-auto h-full w-full text-center donors-slider donationAndDonor ">
+        <div className="max-w-md mx-auto h-[450px] sm:h-full w-full text-center donors-slider donationAndDonor ">
           <Swiper
             modules={[Pagination]}
             spaceBetween={30}

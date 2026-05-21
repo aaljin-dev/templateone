@@ -40,12 +40,14 @@ const UpcomingEvents = ({ headtwo }) => {
       <Heading
         headerone={headtwo}
         className={
-          "  md:mt-[95px] flex flex-col justify-center items-center  w-[50%] mx-auto  font-hFont "
+          "  md:mt-[95px] flex flex-col justify-center items-center w-full px-3 sm:w-[50%] mx-auto  font-hFont "
         }
-        classhead={"text-3xl font-bold text-gray-800 mb-6 md-mb-[62px]"}
+        classhead={
+          "md:text-3xl text-2xl font-bold text-gray-800 mb-6 md-mb-[62px]"
+        }
       />
 
-      <div className="md:max-w-[90%] md:mb-30  mx-auto grid grid-cols-1 md:grid-cols-3 gap-18 ">
+      <div className="md:max-w-[90%] md:mb-30  mx-auto grid grid-cols-1 md:grid-cols-3 gap-18 px-3">
         {events.map((event) => (
           <div key={event.id} className="bg-white rounded-lg  overflow-hidden ">
             {/* <img

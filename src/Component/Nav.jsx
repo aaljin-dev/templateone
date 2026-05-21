@@ -11,7 +11,7 @@ const Nav = () => {
           <img
             src={img}
             alt=""
-            className="w-50 h-20 object-contain md:w-70 md:h-30 "
+            className="w-40 h-10 my-2 sm:w-50 sm:h-20 sm:object-contain md:w-70 md:h-30 "
           />
         </div>
         <div className="hidden md:block w-full">
@@ -32,7 +32,7 @@ const Nav = () => {
               setOpen(!Open);
             }}
           >
-            <CiMenuBurger className="text-2xl" />
+            <CiMenuBurger className="text-xl" />
           </button>
         </div>
       </div>
