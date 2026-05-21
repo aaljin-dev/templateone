@@ -11,11 +11,11 @@
   padding: 15px;
 }
 .volunteer-slider .swiper-button-prev {
-  left: 45%;
+  left: 55%;
   transform: translateX(-50%);
 }
 .volunteer-slider .swiper-button-next {
-  right: 50%;
+  right: 40%;
   transform: translateX(50%);
 }
 .volunteer-slider .swiper-button-next:after,

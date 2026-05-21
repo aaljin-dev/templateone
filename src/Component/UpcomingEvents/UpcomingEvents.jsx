@@ -40,7 +40,7 @@ const UpcomingEvents = ({ headtwo }) => {
       <Heading
         headerone={headtwo}
         className={
-          "  md:mt-[95px] flex flex-col justify-center items-center w-full px-3 sm:w-[50%] mx-auto  font-hFont "
+          "  md:mt-[95px] flex flex-col justify-center items-center w-full px-3 sm:w-[50%] mx-auto  font-hFont mb-6"
         }
         classhead={
           "md:text-3xl text-2xl font-bold text-gray-800 mb-6 md-mb-[62px]"

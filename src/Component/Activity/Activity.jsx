@@ -29,34 +29,35 @@ const Activity = ({ headerone }) => {
   ];
 
   return (
-    <div className="py-20 bg-gray-50 flex flex-col items-center">
+    <div className="pb-20 pt-10 bg-gray-50 flex flex-col items-center">
       <Heading
         headerone={headerone}
         className={
-          "mb-7 sm:mt-10 flex flex-col justify-center items-center w-full px-3  sm:w-[50%] mx-auto font-hFont "
+          "mb-6 sm:mt-10 flex flex-col justify-center items-center w-full px-3  sm:w-[50%] mx-auto font-hFont "
         }
         classhead={"md:text-3xl text-2xl font-bold text-gray-800 mb-6"}
       />
 
-      <div className="flex flex-col md:flex-row gap-[10%] px-4 max-w-8xl min-h-[350px] mx-auto border">
+      <div className="flex flex-col md:flex-row md:gap-[3%] lg:gap-[10%] gap-[10%] px-4 max-w-8xl min-h-[350px] mx-auto">
+        {" "}
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="bg-white sm:w-[400px] p-10 rounded-lg shadow-[0_1px_5px_rgba(0,0,0,0.3)]  flex-1 relative mt-10 "
+            className="bg-white sm:w-[200px] md:w-[200px] lg:w-[400px] p-10 rounded-lg shadow-[0px_4px_12px_rgba(0,0,0,0.1)] flex-1 relative mt-15"
           >
             <div
-              className="w-20 h-20 bg-white   shadow-[0_2px_10px_rgba(0,0,0,0.3),0_0px_3px_rgba(0,0,0,0.3)]  rounded-full flex justify-center items-center
+              className="w-20 h-20 bg-white   shadow-[0px_4px_12px_rgba(0,0,0,0.1)] rounded-full flex justify-center items-center
              absolute -top-10 left-1/2 -translate-x-1/2"
             >
               <div className="text-gray-800 text-2xl">{card.icon}</div>
             </div>
 
-            <h3 className="text-2xl font-medium mt-5 text-gray-600 ">
+            <h3 className="text-2xl font-medium mt-4 text-gray-600 ">
               {card.title}
             </h3>
-            <span className="border  flex mt-1 ml-14 w-30 "></span>
+            <div className="border w-[60%] mx-auto text-center mt-2 text-gray-600"></div>
 
-            <p className="text-gray-600 text-center text-base leading-relaxed  pt-2 flex h-10/12 justify-center items-center">
+            <p className="text-gray-600 text-center text-base leading-relaxed   flex h-10/12 justify-center items-center">
               {card.description}
             </p>
           </div>

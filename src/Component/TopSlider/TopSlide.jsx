@@ -36,7 +36,7 @@ function TopSlide() {
           pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
         >
-          <SwiperSlide className="h-full slidearrow">
+          <SwiperSlide className="h-full slidearrow ">
             <div className="h-full flex justify-center items-center ">
               <div className="h-full flex flex-col w-[70%] gap-[6%] justify-center items-center text-center">
                 <h1 className="text-white sm:text-4xl text-xl font-bold font-hFont">

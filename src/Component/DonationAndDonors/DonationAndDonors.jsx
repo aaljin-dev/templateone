@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -19,15 +20,13 @@ const DonationAndDonors = () => {
   const data = [{}];
 
   return (
-    <div className="flex flex-col lg:flex-row w-full md:h-[600px] sm:mt-4 sm:px-[5%] borderr">
+    <div className="flex flex-col lg:flex-row w-full md:h-[600px] sm:mt-4 sm:px-[5%] ">
       {/* Donation Now Section */}
-      <div className="lg:w-1/2 bg-[#02d262] md:py-10 py-6 px-3 lg:px-15 text-white flex flex-col justify-around gap-1 items-center borderr">
-        <h2 className="text-2xl font-base   lg:text-left borderr">
-          DONATION NOW
-        </h2>
+      <div className="lg:w-1/2 bg-[#02d262] md:py-10 py-6 px-3 py-10 lg:px-15 text-white flex flex-col justify-around gap-1 items-center ">
+        <h2 className="text-2xl font-base   lg:text-left">DONATION NOW</h2>
 
-        <div className=" border">
-          <div className="flex items-center sm:gap-5 md:mb-12 mb-6 text-sm font-bold tracking-wide border">
+        <div className=" ">
+          <div className="flex items-center sm:gap-5 md:mb-12 my-6 text-sm font-bold tracking-wide">
             <span>AMOUNT :</span>
             <div className="flex gap-6">
               {amounts.map((amt) => (
@@ -106,7 +105,7 @@ const DonationAndDonors = () => {
 
       {/* Featured Donors Section */}
       <div className="lg:w-9/12 h-full bg-gray-100  lg:p-20 flex flex-col justify-center items-center">
-        <h2 className="text-3xl font-medium mb-5 mt-9 sm:mt-3 text-center text-gray-800">
+        <h2 className="text-xl font-medium mb-5 mt-9 sm:mt-3 text-center text-gray-800">
           FEATURED DONORS
         </h2>
 

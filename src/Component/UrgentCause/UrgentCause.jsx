@@ -4,7 +4,7 @@ import img from "../../assets/images/donate-bg.jpg";
 const UrgentCause = () => {
   return (
     <div
-      className="bg-[#4cdf68] sm:pb-20 py-5 sm:pt-20  px-4 text-center text-white w-full  sm:h-[580px] mx-auto "
+      className="bg-[#4cdf68] sm:pb-20 py-15 sm:pt-20  px-4 text-center text-white w-full  sm:h-[580px] mx-auto "
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="">

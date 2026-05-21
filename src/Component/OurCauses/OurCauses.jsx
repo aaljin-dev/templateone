@@ -62,12 +62,12 @@ const OurCauses = ({ headthree }) => {
       <Heading
         headerone={headthree}
         className={
-          "  md:mt-[43px] flex flex-col justify-center items-center w-full px-3 sm:w-[50%] mx-auto font-hFont "
+          "  md:mt-[43px] flex flex-col justify-center items-center w-full px-3 sm:w-[50%] mx-auto font-hFont mb-6"
         }
         classhead={"md:text-3xl text-2xl font-bold text-gray-800 mb-6"}
       />
 
-      <div className="max-w-[90%] mx-auto  causes-slider-container">
+      <div className="max-w-[90%] mx-auto h-[709px] sm:h-[800px]  causes-slider-container ">
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
@@ -78,13 +78,13 @@ const OurCauses = ({ headthree }) => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="md:pb-26  h-[770px] sm:h-[900px]"
+          className="md:pb-20 h-full "
         >
           {causes.map((cause) => (
             <SwiperSlide key={cause.id}>
               <div
                 className=" rounded-lg shadow-lg
-               overflow-hidden text-center   w-[375px]"
+                text-center   "
               >
                 {/* <img
                   src={cause.image}
@@ -96,7 +96,7 @@ const OurCauses = ({ headthree }) => {
                   alt={cause.title}
                   className={"w-full h-full object-contain"}
                 />
-                <div className="pt-25 ">
+                <div className="pt-15 px-3">
                   <h3 className="text-xl font-bold  text-gray-800 pb-10 font-hFont">
                     {cause.title}
                   </h3>
@@ -121,7 +121,7 @@ const OurCauses = ({ headthree }) => {
                     </div>
                   </div>
 
-                  <div className="mb-11 mt-15">
+                  <div className="mb-8 mt-10">
                     <button className="border-2 border-[#54a079] text-[#3abd77] font-bold py-2 px-6 rounded-full bg-white ">
                       DONATE NOW
                     </button>
