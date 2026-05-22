@@ -1,0 +1,36 @@
+.topslideswiper {
+  width: 99%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #1db060;
+  padding: 15px;
+  border-radius: 50%;
+  color: white !important;
+}
+
+.swiper-button-next .swiper-navigation-icon,
+.swiper-button-prev .swiper-navigation-icon {
+  font-weight: 700;
+  /* scale: calc(1.5); */
+  font-size: 18px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 10px !important;
+  font-weight: bold !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent !important;
+  border: 2px solid white !important;
+  padding: 4px;
+  opacity: 0.8 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1 !important;
+}
